@@ -1,0 +1,67 @@
+ion-header ion-toolbar ion-title {
+    font-size: 1.00rem;
+    font-weight: 600;
+}
+
+.banner {
+    background: var(--primary);
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    h2 {
+        margin: 0;
+        color: var(--white);
+        align-self: center;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+ion-content {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.form {
+    margin-top: 30px;
+    ion-list {
+        padding-bottom: 8px;
+        ion-item {
+            &:last-of-type {
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+    h2 {
+        margin: 0;
+        color: var(--text-light);
+        font-size: 0.94rem;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+}
+
+.button.btn {
+    margin-top: 30px;
+}
+
+.thumb_impression {
+    padding-top: 40px;
+    width: calc(100% - 64px);
+    margin: 0 auto;
+    h2 {
+        margin: 0;
+        color: var(--text-light);
+        font-size: 0.94rem;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    .fingerprint {
+        width: 47px;
+        margin: 0 auto;
+    }
+}

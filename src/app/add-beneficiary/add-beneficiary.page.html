@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'add_beneficiary' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="bg_white">
+    <div class="form">
+        <ion-list lines="none">
+            <ion-card class="animate__animated animate__fadeInUp">
+                <h2>{{'baneficiary_bank' | translate}}</h2>
+                <ion-item lines="none">
+                    <ion-label style="display: none;">{{'baneficiary_bank' | translate}}</ion-label>
+                    <div class="d-flex">
+                        <ion-select mode="md" placeholder="{{'choose_bank' | translate}}" [okText]="'okay' | translate" [cancelText]="'cancel' | translate">
+                            <ion-select-option value="1">SB 1144 2254 2478 2145</ion-select-option>
+                            <ion-select-option value="2">SB 2244 1154 6778 7745</ion-select-option>
+                            <ion-select-option value="3">SB 8844 5654 3278 1045</ion-select-option>
+                        </ion-select>
+                        <ion-icon class="zmdi zmdi-caret-down end ion-text-end"></ion-icon>
+                    </div>
+                </ion-item>
+            </ion-card>
+
+            <ion-card class="animate__animated animate__fadeInUp">
+                <h2>{{'baneficiary_full_name' | translate}}</h2>
+                <ion-item lines="none">
+                    <ion-input type="name" value="Emili Williamson"></ion-input>
+                </ion-item>
+            </ion-card>
+
+            <ion-card class="animate__animated animate__fadeInUp">
+                <h2>{{'baneficiary_account_number' | translate}}</h2>
+                <ion-item lines="none">
+                    <ion-input type="text" value="9876 2254 2478 2145"></ion-input>
+                </ion-item>
+            </ion-card>
+
+            <ion-card class="animate__animated animate__fadeInUp">
+                <h2>{{'transfer_limit' | translate}} (in $)</h2>
+                <ion-item lines="none">
+                    <ion-input type="text" value="500"></ion-input>
+                </ion-item>
+            </ion-card>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border" (click)="save()">
+    <ion-button size="large" shape="block" class="btn">{{'submit' | translate}}</ion-button>
+</ion-footer>

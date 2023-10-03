@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'account' | translate}}</ion-title>
+    </ion-toolbar>
+    <div class="banner d-flex" (click)="profile()">
+        <div class="img_box center_img">
+            <img src="assets/images/profile.png" class="crop_img">
+        </div>
+        <div class="text">
+            <h2>João Marcelino</h2>
+            <!-- <h3>{{'view_profile' | translate}}</h3> -->
+            <h3>Conta: 86954-9 | Banco: 675 </h3>
+            <h4>Bco Investimento MB S.A</h4>
+            <h3></h3>
+        </div>
+    </div>
+</ion-header>
+
+
+<ion-content>
+    <ion-list lines="none">
+
+        <ion-item class="animate__animated animate__fadeInUp" (click)="profile()">
+            <div class="item_inner">
+                <h2>{{'my_profile' | translate}}</h2>
+                <p>{{'text_profile' | translate}}</p>
+            </div>
+        </ion-item>
+        
+        <ion-item class="animate__animated animate__fadeInUp" (click)="buyappalert()">
+            <div class="item_inner">
+                <h2>{{'24_support' | translate}}</h2>
+                <p>{{'24_support_text' | translate}}</p>
+            </div>
+        </ion-item>
+
+        <ion-item class="animate__animated animate__fadeInUp" (click)="terms_conditions()">
+            <div class="item_inner">
+                <h2>{{'terms_conditions' | translate}}</h2>
+                <p>{{'bank_app_conditions' | translate}}</p>
+            </div>
+        </ion-item>
+
+        <!-- <ion-item class="animate__animated animate__fadeInUp" (click)="thumb_impression()">
+            <div class="item_inner">
+                <h2>{{'change_thumb_impression' | translate}}</h2>
+                <p>{{'change_login_mpin' | translate}}</p>
+            </div>
+        </ion-item> -->
+
+    
+        <ion-item class="animate__animated animate__fadeInUp" (click)="faqs()">
+            <div class="item_inner">
+                <h2>{{'faqs' | translate}}</h2>
+                <p>{{'faqs_text' | translate}}</p>
+            </div>
+        </ion-item>
+
+    
+
+        <!-- <ion-item class="animate__animated animate__fadeInUp" (click)="change_language()">
+            <div class="item_inner">
+                <h2>{{'change_language' | translate}}</h2>
+                <p>{{'select_language' | translate}}</p>
+            </div>
+        </ion-item> -->
+
+        <ion-item class="animate__animated animate__fadeInUp" (click)="support()">
+            <div class="item_inner">
+                <h2>{{'error_debug' | translate}}</h2>
+                <p>{{'error_text' | translate}}</p>
+            </div>
+        </ion-item>
+
+        <ion-item class="animate__animated animate__fadeInUp" (click)="sing_in()">
+            <div class="item_inner">
+                <h2>{{'logout' | translate}}</h2>
+                <p>{{'logout_from_app' | translate}}</p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border animate__animated animate__fadeInUp" *ngIf="config.demoMode">
+    <div class="developed_by d-flex" (click)="developed_by()">
+        <h2>{{"developed_by" | translate}}</h2>
+        <div class="img_box ion-text-end end">
+            <img src="assets/images/opus.png" class="light-theme-logo">
+        </div>
+    </div>
+</ion-footer>

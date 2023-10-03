@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'loan_info' | translate}}</ion-title>
+    </ion-toolbar>
+    <div class="offersBanner">
+        <div class="img_box animate__animated animate__fadeInUp">
+            <img src="assets/images/banner/banner1.png">
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_white" fullscreen>
+    <div class="form">
+        <div class="about">
+            <p class="animate__animated animate__fadeInUp">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <p class="animate__animated animate__fadeInUp">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+        </div>
+
+        <ion-list lines="none">
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-label position="floating">{{'full_name' | translate}}</ion-label>
+                <ion-input type="name" placeholder="{{'enter_full_name' | translate}}"></ion-input>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-label position="floating">{{'phone_number' | translate}}</ion-label>
+                <ion-input type="number" placeholder="{{'enter_your_phone_number' | translate}}"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border animate__animated animate__fadeInUp">
+    <ion-button size="large" shape="block" class="btn">{{'i_am_interested' | translate}}</ion-button>
+</ion-footer>

@@ -1,0 +1,59 @@
+ion-header {
+    background: var(--primary);
+    .offersBanner {
+        h2 {
+            margin: 0;
+            padding: 20px 15px;
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: .94rem;
+        }
+        .img_box {
+            max-width: calc(100% - 30px);
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.form {
+    width: calc(100% - 34px);
+    margin-top: 32px;
+    .about {
+        p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 26px;
+            color: var(--text-dark);
+            padding-bottom: 20px;
+        }
+    }
+    ion-list {
+        padding-top: 20px;
+        ion-item {
+            background: none;
+            border: none !important;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 20px;
+            ion-input {
+                font-size: 1.05rem !important;
+                font-weight: 500 !important;
+                padding: 14px 20px !important;
+                background: var(--item_bg);
+                border: 1.5px solid var(--border-line-color);
+                border-radius: 8px;
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+ion-footer {
+    padding: 20px;
+}

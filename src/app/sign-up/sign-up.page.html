@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+
+    <div class="banner">
+        <h2 class="ion-text-center animate__animated animate__zoomIn">
+            <img src="../../assets/images/logo.png"  width="300" height="300">
+        </h2>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="form">
+        <h2 class="ion-text-center animate__animated animate__fadeInUp">{{'register_with_your_banking_details' | translate}}</h2>
+        <ion-list lines="none">
+           
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="text" placeholder="{{'your_name' | translate}}"></ion-input>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="email" placeholder="{{'customer_id' | translate}}"></ion-input>
+            </ion-item>
+            
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="text" placeholder="{{'your_phone' | translate}}"></ion-input>
+            </ion-item>
+
+            <ion-button size="large" shape="block" class="btn animate__animated animate__fadeInUp" (click)="verification()">{{'continue' | translate}}</ion-button>
+        </ion-list>
+
+    </div>
+
+   
+</ion-content>

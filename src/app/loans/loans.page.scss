@@ -1,0 +1,79 @@
+ .banner {
+     background: var(--primary);
+     padding-bottom: 10px;
+     overflow: hidden;
+     ion-card {
+         background: url('../../assets/images/item_bg.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         position: relative;
+         border-radius: 20px;
+         padding: 20px 20px;
+         margin: 0 auto;
+         margin-bottom: 15px;
+         width: calc(100% - 25px);
+         box-shadow: none !important;
+         ion-row {
+             margin: 0 -5px;
+             align-items: flex-end;
+             position: relative;
+             z-index: 99;
+             ion-col {
+                 padding: 0 5px;
+                 h3 {
+                     font-size: 0.9rem;
+                     font-weight: 400;
+                     margin: 0;
+                     color: var(--text-light);
+                     padding-bottom: 8px;
+                     span {
+                         min-width: fit-content;
+                         color: var(--primary);
+                         font-weight: 500;
+                         margin: 0;
+                     }
+                 }
+                 h2 {
+                     margin: 0;
+                     font-size: 1.3rem;
+                     font-weight: 700;
+                     padding-bottom: 25px;
+                     letter-spacing: .5px;
+                     position: relative;
+                     z-index: 99;
+                     color: var(--text-black);
+                     sub {
+                         font-weight: 400;
+                         font-size: 0.7rem;
+                     }
+                 }
+                 h4 {
+                     margin: 0;
+                     color: var(--text-black);
+                     font-weight: 700;
+                     font-size: 1.05rem;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .offersBanner {
+     h2 {
+         margin: 0;
+         padding: 20px 15px;
+         color: var(--text-light);
+         font-weight: 500;
+         font-size: .94rem;
+     }
+     .img_box {
+         max-width: calc(100% - 30px);
+         overflow: hidden;
+         border-radius: 20px;
+         margin: 0 auto;
+         margin-bottom: 5px;
+         img {
+             border-radius: 20px;
+         }
+     }
+ }

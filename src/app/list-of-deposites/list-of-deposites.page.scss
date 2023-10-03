@@ -1,0 +1,96 @@
+.banner {
+    background: var(--primary);
+    padding-bottom: 10px;
+    overflow: hidden;
+    ion-card {
+        background: rgba(0, 0, 0, 0.22);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 25px;
+        padding: 5px 20px;
+        margin: 0 auto;
+        margin-bottom: 6px;
+        width: calc(100% - 25px);
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+        border: 2px dashed #ffffffa6;
+        h2 {
+            margin: auto;
+            width: fit-content;
+            font-size: 1.0rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 99;
+            color: var(--white);
+            ion-icon {
+                font-size: 1.7rem;
+                min-width: 40px;
+            }
+        }
+    }
+}
+
+ion-list {
+    width: calc(100% - 25px);
+    margin: 0 auto;
+    margin-top: 12px;
+    background: none;
+    h2 {
+        margin: 0;
+        color: var(--text-light);
+        font-size: 0.94rem;
+        font-weight: 500;
+        padding-bottom: 18px;
+    }
+    ion-item {
+        padding: 0;
+        margin-bottom: 13px;
+        --background: var(--transparent);
+        background: var(--white);
+        --inner-padding-end: 0px;
+        --inner-min-height: unset !important;
+        --padding-start: 0;
+        box-shadow: none !important;
+        --min-height: unset;
+        border-radius: 20px !important;
+        .item_inner {
+            width: 100%;
+        }
+        ion-row {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-line-color) !important;
+            &:last-child {
+                border: 0 !important;
+            }
+            ion-col {
+                h4 {
+                    font-size: 1.0rem;
+                    font-weight: 500;
+                    margin: 0;
+                    color: var(--text-black);
+                }
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    margin: 0;
+                    color: var(--text-light);
+                    padding-bottom: 8px;
+                }
+                h5 {
+                    font-size: 1.0rem;
+                    font-weight: 500;
+                    margin: 0;
+                }
+            }
+        }
+        &.panding ion-row ion-col h5 {
+            color: var(--secondary);
+        }
+        &.deposited ion-row ion-col h5 {
+            color: var(--primary);
+        }
+    }
+}

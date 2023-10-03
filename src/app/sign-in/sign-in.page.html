@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <span class="d-flex" (click)="sign_up()">
+                <span class="end"> {{'new_account' | translate}}</span>
+            </span>
+        </ion-title>
+    </ion-toolbar>
+
+    <div class="banner">
+        <h2 class="ion-text-center animate__animated animate__zoomIn">
+         
+            <img src="../../assets/images/logo.png"  width="300" height="300">
+        </h2>
+    </div>
+</ion-header>
+
+<ion-content class="bg_white" fullscreen>
+    <div class="form">
+        <h2 class="ion-text-center animate__animated animate__fadeInUp">{{'welcome_back' | translate}}</h2>
+        <ion-list lines="none">
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="email" placeholder="{{'customer_id' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="password" placeholder="{{'keyword' | translate}}"></ion-input>
+            </ion-item>
+            <ion-button size="large" shape="block animate__animated animate__fadeInUp" class="btn" (click)="tabs()">{{'sign_in' | translate}}</ion-button>
+        </ion-list>
+    </div>
+
+    <!-- <div class="thumb_impression ion-text-center">
+        <h2 class="animate__animated animate__fadeInUp">{{'or_scan_you_thump_to_continue' | translate}}</h2>
+        <div class="fingerprint animate__animated animate__zoomIn">
+            <img src="assets/images/icons/ic_thumb.png">
+        </div>
+    </div> -->
+</ion-content>
