@@ -105,6 +105,8 @@
     "back_side": "verso",
     "select_account": "Selecione a conta",
     "available_balance": "Saldo disponível",
+    "enter_balance": "Entrada",
+    "finish_balance": "Saida",
     "loans": "Empréstimos",
     "loan_offers_available": "Ofertas de empréstimo disponíveis",
     "apply_now": "Aplique agora",
