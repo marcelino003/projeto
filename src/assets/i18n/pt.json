@@ -19,6 +19,7 @@
     "transfer_limit": "Limite de transferência",
     "submit": "Enviar",
     "transactions": "Transações",
+    "notifications": "Notificações",
     "check_blance": "Verificar Saldo",
     "investiment": "Investir Agora",
 
@@ -90,6 +91,8 @@
     "due_amount": "Valor devido",
     "emi": "EU",
     "recent_transactios": "Transações recentes",
+    "recent_notfications": "Notficações recentes",
+
     "deposits": "Depósitos",
     "upload_deposite": "Carregar depósito",
     "upload_photo_erro":"Anexar foto (opicional)",

@@ -1,0 +1,115 @@
+ion-header {
+    ion-toolbar ion-title {
+        padding: 0 15px !important;
+        display: block;
+        text-align: center;
+    }
+    .banner {
+        background: var(--primary);
+        padding-bottom: 5px;
+        ion-card {
+            background: url('../../assets/images/item_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 20px;
+            padding: 20px 20px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            width: calc(100% - 25px);
+            box-shadow: none !important;
+            ion-row {
+                margin: 0 -5px;
+                align-items: flex-end;
+                position: relative;
+                z-index: 99;
+                ion-col {
+                    h3 {
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        margin: 0;
+                        color: var(--text-light);
+                        padding-bottom: 10px;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        padding-bottom: 0;
+                        letter-spacing: 0.5px;
+                        position: relative;
+                        z-index: 99;
+                        color: var(--text-black);
+                        span {
+                            min-width: fit-content;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-list {
+    margin: 0 auto;
+    padding: 20px 0;
+    background: none;
+    h2 {
+        color: var(--text-light);
+        font-size: 0.94rem;
+        font-weight: 500;
+        width: calc(100% - 37px);
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    ion-item {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-line-color) !important;
+        --background: var(--transparent);
+        background: var(--transparent);
+        --inner-padding-end: 0px;
+        --inner-min-height: unset !important;
+        --padding-start: 0;
+        --min-height: unset;
+        width: calc(100% - 37px);
+        margin: 0 auto;
+        .item_inner {
+            width: 100%;
+            h3 {
+                font-size: 1.05rem;
+                font-weight: 600;
+                margin: 0;
+                padding-bottom: 6px;
+                color: var(--text-black);
+            }
+            h4 {
+                color: var(--text-light2);
+                font-size: 0.85rem;
+                font-weight: 400;
+                margin: 0;
+                span {
+                    &.end {
+                        font-size: .95rem;
+                        font-weight: 500;
+                        color: var(--red_color);
+                        min-width: fit-content;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            border-bottom: none !important;
+        }
+        &.debited {
+            .item_inner h4 span.end {
+                color: var(--red_color);
+            }
+        }
+        &.credited {
+            .item_inner h4 span.end {
+                color: var(--secondary);
+            }
+        }
+    }
+}

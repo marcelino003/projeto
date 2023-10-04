@@ -16,6 +16,10 @@ const routes: Routes = [
         loadChildren: () => import('../transactions/transactions.module').then(m => m.TransactionsPageModule)
       },
       {
+        path: 'notifications',
+        loadChildren: () => import('../notifications/notifications.module').then(m => m.NotificationsPageModule)
+      },
+      {
         path: 'myAccount',
         loadChildren: () => import('../my-account/my-account.module').then(m => m.MyAccountPageModule)
       },
