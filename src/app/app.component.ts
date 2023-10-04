@@ -55,7 +55,7 @@ export class AppComponent {
   }
 
   globalize(languagePriority: string) {
-    this.translate.setDefaultLang("en");
+    this.translate.setDefaultLang("pt");
     let defaultLangCode = this.config.availableLanguages[0].code;
     this.translate.use(languagePriority && languagePriority.length ? languagePriority : defaultLangCode);
     this.setDirectionAccordingly(languagePriority && languagePriority.length ? languagePriority : defaultLangCode);
