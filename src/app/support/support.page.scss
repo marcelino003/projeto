@@ -1,6 +1,6 @@
 ion-header ion-toolbar ion-title {
     font-size: 1.00rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .banner {
@@ -27,7 +27,7 @@ ion-header ion-toolbar ion-title {
             margin: auto;
             width: fit-content;
             font-size: 1.0rem;
-            font-weight: 600;
+            font-weight: 400;
             position: relative;
             z-index: 99;
             color: var(--white);
@@ -99,7 +99,7 @@ ion-header ion-toolbar ion-title {
                 color: var(--text-black);
                 font-size: 1.05rem;
                 margin: 0;
-                font-weight: 600;
+                font-weight: 400;
                 ion-icon {
                     font-size: 1.6rem;
                     color: var(--secondary);
@@ -111,7 +111,7 @@ ion-header ion-toolbar ion-title {
                 color: var(--text-black);
                 margin: 0;
                 font-size: 1.05rem;
-                font-weight: 600;
+                font-weight: 400;
                 padding-bottom: 13px;
                 ion-icon {
                     font-size: 1.2rem;

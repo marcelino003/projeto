@@ -96,6 +96,10 @@ const routes: Routes = [
     loadChildren: () => import('./my-profile/my-profile.module').then( m => m.MyProfilePageModule)
   },
   {
+    path: 'chosse-data',
+    loadChildren: () => import('./chosse-data/chossedata.module').then( m => m.ChossedataPageModule)
+  },
+  {
     path: 'nearby-bank-atm',
     loadChildren: () => import('./nearby-bank-atm/nearby-bank-atm.module').then( m => m.NearbyBankAtmPageModule)
   },
