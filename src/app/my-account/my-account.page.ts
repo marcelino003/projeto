@@ -39,8 +39,12 @@ export class MyAccountPage implements OnInit {
   support() {
     this.route.navigate(['./support']);
   }
-  sing_in() {
-    this.navCtrl.navigateRoot(['./sign-in']);
+  // sing_in() {
+  //   this.navCtrl.navigateRoot(['./sign-in']);
+  // }
+
+  welcomer() {
+    this.navCtrl.navigateRoot(['./welcomer']);
   }
   // buyappalert() {
   //   window.open("http://bit.ly/cc_OpusBanking", '_system', 'location=no');

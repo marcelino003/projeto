@@ -4,17 +4,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'sign-in', 
+    redirectTo: 'welcomer', 
     pathMatch: 'full'
   },
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  // {
-  //   path: 'welcomer',
-  //   loadChildren: () => import('./welcomer/welcomer.module').then( m => m.WelcomerPageModule)
-  // },
+  {
+    path: 'welcomer',
+    loadChildren: () => import('./welcomer/welcomer.module').then( m => m.WelcomerPageModule)
+  },
   {
     path: 'sign-in',
     loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)

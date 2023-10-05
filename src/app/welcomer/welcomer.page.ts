@@ -18,6 +18,12 @@ export class WelcomerPage implements OnInit {
   } 
   sign_up() {
     this.route.navigate(['./sign-up']);
-  } 	
+
+  }
+  
+  sign_in(){
+    this.route.navigate(['./sign-in']);
+
+  }
 
 }
