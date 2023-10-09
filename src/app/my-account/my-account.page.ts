@@ -46,6 +46,10 @@ export class MyAccountPage implements OnInit {
   welcomer() {
     this.navCtrl.navigateRoot(['./welcomer']);
   }
+
+  chosse_data() {
+    this.navCtrl.navigateRoot(['./chosse-data']);
+  }
   // buyappalert() {
   //   window.open("http://bit.ly/cc_OpusBanking", '_system', 'location=no');
   // }
